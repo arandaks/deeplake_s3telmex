@@ -538,7 +538,7 @@ class S3Provider(StorageProvider):
             "region_name": self.aws_region,
             "endpoint_url": self.endpoint_url,
             "config": self.client_config,
-            "validate": False
+            "verify": False
         }
 
     def need_to_reload_creds(self, err: botocore.exceptions.ClientError) -> bool:
